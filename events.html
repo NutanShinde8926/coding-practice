@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #main, #demo, #main1 {
+        height: 100px;
+        width: 100px;
+        background-color: rgba(144, 28, 28, 0.269);
+        margin-bottom: 10px;
+    }
+    #btn {
+        background-color: black;
+        color: white;
+        padding: 7px 15px;
+    }
+</style>
+<body>
+    <div id="main"></div>
+    <div id="main"></div>
+    <div id="main1"></div>
+    <button id ="btn">click me</button>
+
+    <script>
+        let main = document.getElementById('main');
+        main.addEventListener('click',() => {
+            alert('main was clicked')
+        });
+
+        let demo = document.getElementById('demo');
+        demo.addEventListener('click',() => {
+            alert('mouse over the element');
+        })
+        
+        demo.addEventListener('dblclick',()=> {
+            alert('demo was clicked');
+        })
+
+        let btn = document.getElementById('btn');
+        btn.addEventListener('mouseover',() => {
+            btn.style.color = "black";
+            btn.style.backgroundColor = "red";
+            btn.style.borderRadius = '10px';
+        });
+
+        btn.addEventListener('mouseout',() =>{
+            btn.style.color = "red";
+            btn.style.backgroundColor = "white";
+        });
+
+        let main1 = document.getElementById('main1');
+        main1.addEventListener('keyup',() => {
+            alert('key was up')
+        });
+        
+        let ip =  document.getElementById('ip');
+        ip.addEventListener('keydown',(event) => {
+            console.log(event.key, 'was pressed');
+        })
+    </script>
+</body>
+</html>
