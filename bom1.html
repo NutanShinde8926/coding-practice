@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Screen Properties</title>
+</head>
+<body>
+    <h2 id="demo1"></h2>
+    <h2 id="demo2"></h2>
+    <h2 id="demo3"></h2>
+    <h2 id="demo4"></h2>
+
+    <script>
+        document.getElementById('demo1').innerHTML = 'Screen height:' + screen.height;
+        document.getElementById('demo2').innerHTML = 'Screen available height:' + screen.availHeight;
+        document.getElementById('demo3').innerHTML = 'Screen width:' + screen.width;
+        document.getElementById('demo4').innerHTML = 'Screen available width:' + screen.availWidth;
+    </script>
+    
+</body>
+</html>

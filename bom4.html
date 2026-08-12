@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Interval</title>
+</head>
+<body>
+    <h3>Click the button to start the counter</h3>
+    <h4 id="demo"></h4>
+    <button onclick="myfun()" >start</button>
+    <script>
+        function myfun () {
+            let ct = 1;
+            setInterval(() => {
+                document.getElementById('demo').innerHTML = 'Count:' +ct;
+                ct++;
+            },1000);
+        }
+    </script>
+</body>
+</html>

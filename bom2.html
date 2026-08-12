@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location Properties</title>
+</head>
+<body>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+
+    <script>
+       document.getElementById('demo1').innerHTML = 'Entire URL:' + window.location.href;
+       document.getElementById('demo2').innerHTML = 'IP/Domain + port:' + location.host;
+       document.getElementById('demo3').innerHTML = 'IP/Domain:' + window.location.hostname;
+       document.getElementById('demo4').innerHTML = 'path:' + location.pathname;
+       document.getElementById('demo5').innerHTML = 'protocol:' + location.protocol;
+       document.getElementById('demo6').innerHTML = 'port:' + location.port;
+    </script>
+</body>
+</html>
